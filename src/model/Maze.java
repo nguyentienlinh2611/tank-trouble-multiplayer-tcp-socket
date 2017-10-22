@@ -18,10 +18,6 @@ public class Maze implements Serializable{
 	//top wall = [0][b][a]
 	//bottom wall = [0][b+1][a]
 	
-	public Maze() {
-		new Maze(30);
-		//no argument constructor automatically sets the density to the default value of 30
-	}
 	public Maze(int density) {
 		walls = generateMaze(density);
 		//create a randomly filled grid of walls, where the higher the density, the more walls there will be

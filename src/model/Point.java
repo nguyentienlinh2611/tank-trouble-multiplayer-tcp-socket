@@ -1,6 +1,12 @@
 package model;
 
-public class Point {
+import java.io.Serializable;
+
+public class Point implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 647466613616786759L;
 	private double xCoord;
 	private double yCoord;//so the point is (xCoord,yCoord)
 	

@@ -1,6 +1,13 @@
 package model;
 
-public class Square {
+import java.io.Serializable;
+
+public class Square implements Serializable{
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -1556263537594062965L;
 	private int xCoord;
 	private int yCoord;//so the point is (xCoord,yCoord)
 	

@@ -1,7 +1,13 @@
 package model;
 
-public class Bullet{
+import java.io.Serializable;
+
+public class Bullet implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6368700690071863376L;
 	private int timer;
 	private int owner;
 	private int angle;
@@ -31,7 +37,7 @@ public class Bullet{
 		}else{
 			engine.player2.decreaseNumberOfBulletsFired();
 		}
-		GameEngine.bulletList.remove(this);
+		engine.bulletList.remove(this);
 	}
 	
 	public void moveBullet(){
